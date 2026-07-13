@@ -1,0 +1,91 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top left, rgba(255, 215, 230, 0.85), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(255, 180, 208, 0.82), transparent 30%),
+        linear-gradient(180deg, #ffdce8 0%, #ffbdd5 52%, #ff93b7 100%);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 223, 234, 0.18), rgba(255, 255, 255, 0.12));
+    backdrop-filter: blur(3px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 760px;
+    padding: 42px 32px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.15);
+}
+
+.subtitle {
+    display: inline-block;
+    padding: 10px 22px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50px;
+    color: #d63384;
+    font-weight: 700;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(3.4rem, 7vw, 5.2rem);
+    line-height: 1.12;
+    color: white;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 span {
+    color: #ffd7e7;
+}
+
+.hero p {
+    margin: 26px auto 30px;
+    width: min(100%, 640px);
+    color: white;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 0.24);
+}
+
+.hero button {
+    border: none;
+    padding: 18px 45px;
+    border-radius: 60px;
+    background: linear-gradient(135deg, #ff5c8a, #ff7aa9);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 16px 35px rgba(255, 92, 138, 0.32);
+}
+
+.hero button:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 22px 48px rgba(255, 92, 138, 0.46);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+    animation: upDown 2s infinite;

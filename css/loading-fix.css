@@ -1,0 +1,169 @@
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle at top left, rgba(255, 196, 221, 0.95), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(255, 143, 185, 0.75), transparent 32%),
+        linear-gradient(180deg, #fff8fb 0%, #ffe8f1 56%, #fff5fa 100%);
+    overflow: hidden;
+}
+
+#loading-screen::before,
+#loading-screen::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    opacity: 0.55;
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+#loading-screen::before {
+    width: 260px;
+    height: 260px;
+    top: 12%;
+    left: 10%;
+    background: rgba(255, 177, 209, 0.85);
+}
+
+#loading-screen::after {
+    width: 320px;
+    height: 320px;
+    bottom: 8%;
+    right: 8%;
+    background: rgba(255, 123, 171, 0.72);
+    animation-delay: 1.2s;
+}
+
+.loading-content {
+    position: relative;
+    z-index: 5;
+    width: min(92vw, 420px);
+    padding: 32px 28px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(214, 51, 132, 0.18);
+    border-radius: 28px;
+    backdrop-filter: blur(14px);
+    box-shadow:
+        0 20px 50px rgba(191, 74, 121, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.flower {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    font-size: 86px;
+    background: radial-gradient(circle at top, #fff 12%, #ffd2e6 60%, #ffa8ca 100%);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 12px rgba(255, 255, 255, 0.52),
+        0 18px 35px rgba(214, 51, 132, 0.24);
+    animation:
+        bloom 2s ease infinite alternate,
+        floatFlower 3s ease-in-out infinite;
+}
+
+.loading-content h1 {
+    margin: 18px 0 8px;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    color: #d63384;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 12px rgba(214, 51, 132, 0.12);
+}
+
+.loading-content p {
+    margin: 0 0 18px;
+    color: #6a4f59;
+    font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+    font-weight: 600;
+}
+
+.progress {
+    width: min(100%, 320px);
+    height: 12px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid rgba(214, 51, 132, 0.16);
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow:
+        inset 0 3px 8px rgba(0, 0, 0, 0.06),
+        0 8px 18px rgba(214, 51, 132, 0.12);
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff5f9e, #ff80ab, #ffc1d6);
+    box-shadow: 0 0 18px rgba(255, 95, 158, 0.56);
+    transition: width 0.25s ease;
+}
+
+#loading-text {
+    display: block;
+    margin-top: 14px;
+    color: #b7286b;
+    font-size: 0.96rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(0.86) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1.08) rotate(5deg);
+    }
+}
+
+@keyframes floatFlower {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-14px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0%,
+    100% {
+        transform: scale(0.96);
+        opacity: 0.45;
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 0.78;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-content {
+        padding: 26px 18px;
+        border-radius: 22px;
+    }
+
+    .flower {
+        width: 108px;
+        height: 108px;
+        font-size: 72px;
+    }
+
+    .progress {
+        height: 11px;
+    }
+}

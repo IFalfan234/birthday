@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/letter.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/proposal.css">
+    <link rel="stylesheet" href="css/ending.css">
+    <link rel="stylesheet" href="css/petals.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="petals-container"></div>
+    <audio id="bgm" loop src="audio/romantic.mp3"></audio>
+    <button id="musicButton" type="button" aria-label="Toggle background music">🎵</button>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <span class="subtitle">🌹 Welcome To Our Story 🌹</span>
+                <h1>
+                    Happy Birthdayy
+                    <br>
+                    <span>Sayyanggg ❤️ </span>
+                </h1>
+                <p>
+                    Every moment with you is my favorite memory.
+                    Today, I just want to celebrate the most beautiful
+                    person in my life.
+                </p>
+                <button id="startBtn" type="button">Open My Surprise</button>
+                <div id="typing"></div>
+            </div>
+            <div class="scroll-indicator">↓</div>
+        </section>
+
+        <section class="love-letter" id="letter">
+            <div class="letter-container">
+                <span class="letter-subtitle">💌 A Letter For You</span>
+                <h2>Dear My Love ❤️</h2>
+                <div id="typing-text"></div>
+                <button class="next-btn" type="button">Continue Our Journey →</button>
+            </div>
+        </section>
+
+        <section id="welcome">
+            <div class="table"></div>
+            <img src="images/book/book.png" class="book" id="book" alt="Book">
+            <img src="images/mawar.jpeg" class="rose" alt="Rose">
+            <img src="images/lily.jpeg" class="lily" alt="Lily">
+
+            <div class="welcome-text">
+                <h1>For My Beautiful Princess ❤️</h1>
+                <p>
+                    Before you continue...
+                    I prepared something special just for you.
+                </p>
+                <button id="openBook" type="button">Open Our Story</button>
+            </div>
+        </section>
+
+        <section class="timeline-section" id="timeline">
+            <div class="section-title">
+                <span>🌹 Our Journey Together 🌹</span>
+                <h2>Every Moment With You Is Beautiful</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">16 April 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/chat.png" alt="First Meet">
+                        <h3>First Chat 💬</h3>
+                        <p>
+                            Hari dimana kita mulai intens berkomunikasi dan saling mengenal satu sama lain.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">19 April 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/first_meet.jpeg" alt="First Chat">
+                        <h3>Hari Pertama Bertemu</h3>
+                        <p>Hari dimana pertama kita bertemu secara langsung, dan berbagai kegiatan kita lakuin bareng sampai mencari ikan cupang di pasar ikan jatinegara dan tanpa sadar aku mulai merasa cocok sama kamu.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">26 April 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/commitment.jpeg" alt="First Date">
+                        <h3>Official Couple ❤️</h3>
+                        <p>
+                            Hari dimana sangat tidak terbayangkan olehku, walaupun kita baru kenal beberapa hari, tapi aku merasa cocok sama kamu dan aku ingin kita seriusin hubungan ini, dimana hari itu adalah hari terbahagia aku Terima kasih udah Terima aku sebagai pasangan kamu walaupun pada saat itu ak terlalu terburu buru tapi kita yakin untuk menjalani dan saling memahami seiring berjalannya waktu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">5 Mei 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/ultah.jpeg" alt="Official Couple">
+                        <h3>Special Day 🎂</h3>
+                        <p>Hari Hari yang ngga akan pernah akan aku lupain, dimana di hari tersebut aku bisa menjadi orang paling special Terima kasihh atas semua yanga kamu lakuin dan kasih ke aku berkat kamu untuk pertama kali dalam hidup aku hari lahir akuu menjadi hari yang special, yang bahkan terkadang akupun sendiri melupakan hari lahir aku sendiri.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Today 🎂</div>
+                    <div class="timeline-content">
+                        <img src="images/gallery/photo5.jpg" alt="Birthday">
+                        <h3>Happy Birthday My Love</h3>
+                        <p>Semoga perjalanan kita masih sangat panjang ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <div class="gallery-title">
+                <span>📸 Our Beautiful Memories</span>
+                <h2>Every Picture Tells Our Story ❤️</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo1.jpg" alt="Photo 1">
+                    </div>
+                    <div class="memory-text">
+                        <span>01</span>
+                        <h3>Awal Segalanya</h3>
+                        <p>
+                            Semua cerita indah ini dimulai dari pertemuan sederhana.
+                            Siapa sangka pertemuan itu menjadi awal dari perjalanan
+                            yang begitu berarti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="memory-card reverse">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo2.jpg" alt="Photo 2">
+                    </div>
+                    <div class="memory-text">
+                        <span>02</span>
+                        <h3>Percakapan Pertama</h3>
+                        <p>
+                            Dari obrolan sederhana, perlahan aku mulai mengenalmu
+                            dan menyadari betapa berharganya kehadiranmu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo3.jpg" alt="Photo 3">
+                    </div>
+                    <div class="memory-text">
+                        <span>03</span>
+                        <h3>First Date</h3>
+                        <p>
+                            Hari pertama kita pergi bersama.
+                            Hari yang selalu ingin aku ulang.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="memory-card reverse">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo4.jpg" alt="Photo 4">
+                    </div>
+                    <div class="memory-text">
+                        <span>04</span>
+                        <h3>Official Couple</h3>
+                        <p>Hari ketika kita memilih untuk berjalan bersama.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo5.jpg" alt="Photo 5">
+                    </div>
+                    <div class="memory-text">
+                        <span>05</span>
+                        <h3>Happy Together</h3>
+                        <p>Terima kasih telah menjadi alasan di balik banyak senyumku.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card reverse">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo6.jpg" alt="Photo 6">
+                    </div>
+                    <div class="memory-text">
+                        <span>06</span>
+                        <h3>Our Journey</h3>
+                        <p>Setiap langkah terasa ringan karena selalu ada kamu.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo7.jpg" alt="Photo 7">
+                    </div>
+                    <div class="memory-text">
+                        <span>07</span>
+                        <h3>Favorite Day</h3>
+                        <p>Hari-hari sederhana selalu menjadi istimewa bersamamu.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card reverse">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo8.jpg" alt="Photo 8">
+                    </div>
+                    <div class="memory-text">
+                        <span>08</span>
+                        <h3>Sweet Smile</h3>
+                        <p>Senyummu selalu menjadi alasanku untuk terus bersyukur.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo9.jpg" alt="Photo 9">
+                    </div>
+                    <div class="memory-text">
+                        <span>09</span>
+                        <h3>Forever</h3>
+                        <p>Semoga semua cerita indah ini terus berlanjut.</p>
+                    </div>
+                </div>
+
+                <div class="memory-card reverse">
+                    <div class="memory-image">
+                        <img src="images/gallery/photo10.jpg" alt="Photo 10">
+                    </div>
+                    <div class="memory-text">
+                        <span>10</span>
+                        <h3>Happy Birthday ❤️</h3>
+                        <p>
+                            Hari ini adalah hari spesialmu.
+                            Terima kasih telah hadir dalam hidupku.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="itinerary-section" id="itinerary">
+            <div class="section-title">
+                <span>💌 A Special Day Just For Us</span>
+                <h2>Our Birthday Date Itinerary</h2>
+                <p>
+                    Aku sudah menyiapkan hari spesial untuk kita.
+                    Semoga setiap momennya menjadi kenangan yang indah.
+                </p>
+            </div>
+
+            <div class="itinerary">
+                <div class="timeline-line"></div>
+
+                <div class="itinerary-card">
+                    <div class="time">08:00</div>
+                    <div class="content">
+                        <h3>☕ Breakfast Together</h3>
+                        <p>Memulai hari dengan sarapan bersama.</p>
+                    </div>
+                </div>
+
+                <div class="itinerary-card">
+                    <div class="time">10:00</div>
+                    <div class="content">
+                        <h3>🌸 Flower Garden</h3>
+                        <p>Berjalan-jalan menikmati taman bunga.</p>
+                    </div>
+                </div>
+
+                <div class="itinerary-card">
+                    <div class="time">13:00</div>
+                    <div class="content">
+                        <h3>🎬 Watch Movie</h3>
+                        <p>Menonton film favorit bersama.</p>
+                    </div>
+                </div>
+
+                <div class="itinerary-card">
+                    <div class="time">16:00</div>
+                    <div class="content">
+                        <h3>📸 Take Pictures</h3>
+                        <p>Mengabadikan momen indah kita.</p>
+                    </div>
+                </div>
+
+                <div class="itinerary-card">
+                    <div class="time">18:00</div>
+                    <div class="content">
+                        <h3>🌅 Sunset</h3>
+                        <p>Menikmati matahari terbenam bersama.</p>
+                    </div>
+                </div>
+
+                <div class="itinerary-card">
+                    <div class="time">19:30</div>
+                    <div class="content">
+                        <h3>🎂 Birthday Dinner</h3>
+                        <p>Makan malam romantis untuk merayakan ulang tahunmu.</p>
+                    </div>
+                </div>
+
+                <div class="itinerary-card">
+                    <div class="time">20:30</div>
+                    <div class="content">
+                        <h3>🎁 Special Surprise</h3>
+                        <p>Aku punya hadiah kecil untuk orang yang paling spesial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown-section" id="countdown">
+            <div class="countdown-overlay"></div>
+            <div class="countdown-content">
+                <span>⏳ The Special Day Is Coming</span>
+                <h2>Countdown To Our Special Moment ❤️</h2>
+                <p>
+                    Aku sudah tidak sabar bertemu dan merayakan hari spesial ini bersamamu.
+                </p>
+
+                <div class="countdown">
+                    <div class="box">
+                        <h1 id="days">00</h1>
+                        <small>Days</small>
+                    </div>
+                    <div class="box">
+                        <h1 id="hours">00</h1>
+                        <small>Hours</small>
+                    </div>
+                    <div class="box">
+                        <h1 id="minutes">00</h1>
+                        <small>Minutes</small>
+                    </div>
+                    <div class="box">
+                        <h1 id="seconds">00</h1>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proposal-section" id="proposal">
+            <div class="proposal-card">
+                <span>🌹 One More Question 🌹</span>
+                <h2>Will You Go On Another Date With Me?</h2>
+                <p>
+                    Aku ingin membuat lebih banyak kenangan bersamamu.
+                    Mau jalan lagi denganku? ❤️
+                </p>
+                <img src="images/flowers/rose-bouquet.png" class="proposal-image" alt="Rose Bouquet">
+
+                <div class="buttons">
+                    <button id="yesBtn" type="button">Yes ❤️</button>
+                    <button id="noBtn" type="button">No 🙈</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ending-section" id="ending">
+            <canvas id="confetti"></canvas>
+
+            <div class="ending-content">
+                <img src="images/cake/cake.png" class="cake" alt="Birthday Cake">
+
+                <h1>
+                    Happy Birthday
+                    <br>
+                    My Beautiful Princess ❤️
+                </h1>
+
+                <p class="ending-message">
+                    Thank you for coming into my life.
+                    Every day with you is a blessing.
+                    I hope this birthday brings happiness,
+                    health, endless laughter,
+                    and beautiful memories.
+                    I promise to keep creating
+                    new memories with you.
+                    I Love You Forever ❤️
+                </p>
+
+                <button id="replay" type="button">Replay Our Story 🌹</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/itinerary.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/proposal.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/ending.js"></script>
+    <script src="js/petals.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+</body>
+</html>

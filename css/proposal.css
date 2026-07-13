@@ -1,0 +1,121 @@
+.proposal-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        180deg,
+        #fff6f8,
+        #fff0f5
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.proposal-card{
+
+    width:700px;
+
+    max-width:90%;
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.proposal-card span{
+
+    color:#d63384;
+
+    font-weight:bold;
+
+}
+
+.proposal-card h2{
+
+    margin:25px 0;
+
+    font-size:46px;
+
+}
+
+.proposal-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.proposal-image{
+
+    width:220px;
+
+    margin:40px auto;
+
+    display:block;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.buttons button{
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+#yesBtn{
+
+    background:#ff5c8a;
+
+    color:white;
+
+}
+
+#yesBtn:hover{
+
+    transform:scale(1.1);
+
+}
+
+#noBtn{
+
+    background:#ececec;
+
+}

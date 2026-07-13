@@ -1,0 +1,129 @@
+.itinerary-section {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background:
+        radial-gradient(circle at top, rgba(255, 212, 228, 0.78), transparent 24%),
+        linear-gradient(180deg, #fffdfd 0%, #fff7fb 54%, #fff1f6 100%);
+    position: relative;
+}
+
+.itinerary-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at left top, rgba(255, 174, 203, 0.12), transparent 26%),
+        radial-gradient(circle at right bottom, rgba(255, 142, 182, 0.16), transparent 24%);
+    pointer-events: none;
+}
+
+.itinerary {
+    position: relative;
+    max-width: 920px;
+    margin: 80px auto 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 92px;
+    top: 12px;
+    width: 3px;
+    height: calc(100% - 12px);
+    background: linear-gradient(180deg, #ff89b3, #ffd1df);
+    border-radius: 999px;
+}
+
+.itinerary-card {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 28px;
+    margin-bottom: 36px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 1s ease;
+    position: relative;
+}
+
+.itinerary-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.time {
+    width: 84px;
+    height: 84px;
+    background: linear-gradient(135deg, #ff6ca2, #ff3f7f);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+    z-index: 2;
+    box-shadow: 0 16px 34px rgba(255, 93, 143, 0.34);
+}
+
+.content {
+    position: relative;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 144, 182, 0.22);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 126, 173, 0.22), transparent 72%);
+}
+
+.content h3 {
+    position: relative;
+    z-index: 1;
+    color: #d63384;
+    margin: 0 0 10px;
+    font-size: 1.55rem;
+}
+
+.content p {
+    position: relative;
+    z-index: 1;
+    color: #66555f;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .itinerary-section {
+        padding: 100px 6%;
+    }
+
+    .timeline-line {
+        left: 28px;
+    }
+
+    .itinerary-card {
+        grid-template-columns: 56px 1fr;
+        gap: 18px;
+    }
+
+    .time {
+        width: 56px;
+        height: 56px;
+        font-size: 0.72rem;
+    }
+
+    .content {
+        padding: 22px;
+    }
+}

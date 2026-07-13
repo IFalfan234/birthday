@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background: #fffdfd;
+    color: #333;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font-family: inherit;
+}
+
+main {
+    display: block;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-title span {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(214, 51, 132, 0.16);
+    border-radius: 999px;
+    color: #d63384;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    box-shadow: 0 12px 28px rgba(214, 51, 132, 0.08);
+}
+
+.section-title h2 {
+    margin: 18px 0 0;
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    color: #b83b5e;
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.1;
+}
+
+.section-title p {
+    max-width: 700px;
+    margin: 18px auto 0;
+    color: #6a4f59;
+    line-height: 1.8;
+    font-size: 1.02rem;
+}
+
+#musicButton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    z-index: 9999;
+}
+
+#musicButton:hover {
+    transform: scale(1.05);
+}
