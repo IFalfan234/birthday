@@ -1,0 +1,106 @@
+:root {
+    --pink: #ff5c8a;
+    --pink-dark: #d63384;
+    --cream: #fff7fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(255, 210, 226, 0.95), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(255, 168, 198, 0.9), transparent 28%),
+        linear-gradient(180deg, #fff8fb 0%, #ffeaf2 52%, #ffc6da 100%);
+    overflow: hidden;
+}
+
+.entry-wrapper {
+    width: min(100%, 920px);
+    padding: 32px 16px;
+}
+
+.entry-card {
+    text-align: center;
+    padding: 42px 24px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 28px 70px rgba(214, 51, 132, 0.18);
+}
+
+.entry-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: rgba(214, 51, 132, 0.12);
+    color: var(--pink-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.entry-card h1 {
+    margin: 18px 0 12px;
+    font-size: clamp(2.6rem, 6vw, 4.8rem);
+    line-height: 1.1;
+    color: var(--pink-dark);
+    font-family: "Dancing Script", cursive;
+}
+
+.entry-card p {
+    margin: 0 auto;
+    max-width: 680px;
+    color: #654853;
+    font-size: clamp(1rem, 2vw, 1.12rem);
+    line-height: 1.8;
+}
+
+.entry-countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 34px;
+}
+
+.entry-box {
+    width: 120px;
+    padding: 18px 12px;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 22px;
+    border: 1px solid rgba(214, 51, 132, 0.16);
+    box-shadow: 0 16px 36px rgba(214, 51, 132, 0.12);
+}
+
+.entry-box h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #ff4c87;
+}
+
+.entry-box span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.92rem;
+    color: #7d5662;
+    font-weight: 700;
+}
+
+@media (max-width: 640px) {
+    .entry-card {
+        padding: 32px 18px;
+    }
+
+    .entry-box {
+        width: calc(50% - 9px);
+    }
+}

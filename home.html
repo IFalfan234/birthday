@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/letter.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/itinerary.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/proposal.css">
+    <link rel="stylesheet" href="css/ending.css">
+    <link rel="stylesheet" href="css/petals.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="petals-container"></div>
+    <audio id="bgm" loop preload="auto" playsinline src="audio/you!.mp3"></audio>
+    <button id="musicButton" type="button" aria-label="Toggle background music">🎵</button>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <span class="subtitle">🌹 Welcome To Our Story 🌹</span>
+                <h1>
+                    Happy Birthdayy
+                    <br>
+                    <span>Sayyanggg ❤️ </span>
+                </h1>
+                <p>
+                    Every moment with you is my favorite memory.
+                    Today, I just want to celebrate the most beautiful
+                    person in my life.
+                </p>
+                <button id="startBtn" type="button">Open My Surprise</button>
+                <div id="typing"></div>
+            </div>
+            <div class="scroll-indicator">↓</div>
+        </section>
+
+        <section class="love-letter" id="letter">
+            <div class="letter-container">
+                <span class="letter-subtitle">💌 A Letter For You</span>
+                <h2>Dear My Love ❤️</h2>
+                <div id="typing-text"></div>
+                <button class="next-btn" type="button">Continue Our Journey →</button>
+            </div>
+        </section>
+
+        <section id="welcome">
+            <div class="table"></div>
+            <div class="welcome-text">
+                <h1>For My Beautiful Princess ❤️</h1>
+                <p>
+                    Before you continue...
+                    I prepared something special just for you.
+                </p>
+                <button id="openBook" type="button">Open Our Story</button>
+            </div>
+        </section>
+        <section class="timeline-section" id="timeline">
+            <div class="section-title">
+                <span>🌹 Our Journey Together 🌹</span>
+                <h2>Every Moment With You Is Beautiful</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">16 April 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/chat.png" alt="First Meet">
+                        <h3>First Chat 💬</h3>
+                        <p>
+                            Hari dimana kita mulai intens berkomunikasi dan saling mengenal satu sama lain.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">19 April 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/first_meet.jpeg" alt="First Chat">
+                        <h3>Hari Pertama Bertemu</h3>
+                        <p>Hari dimana pertama kita bertemu secara langsung, dan berbagai kegiatan kita lakuin bareng sampai mencari ikan cupang di pasar ikan jatinegara dan tanpa sadar aku mulai merasa cocok sama kamu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">26 April 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/couple.jpeg" alt="First Date">
+                        <h3>Official Couple ❤️</h3>
+                        <p>
+                            Hari dimana sangat tidak terbayangkan, walaupun kita baru kenal beberapa hari, tapi aku merasa cocok sama kamu dan aku ingin kita seriusin hubungan ini, dimana hari itu adalah hari terbahagia aku Terima kasih udah Terima aku sebagai pasangan kamu walaupun pada saat itu ak terlalu terburu buru tapi kita yakin untuk menjalani dan saling memahami seiring berjalannya waktu.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">5 Mei 2026</div>
+                    <div class="timeline-content">
+                        <img src="images/ultah.jpeg" alt="Official Couple">
+                        <h3>Special Day 🎂</h3>
+                        <p>Hari Hari yang ngga akan pernah akan aku lupain, dimana di hari tersebut aku bisa menjadi orang paling special Terima kasihh atas semua yanga kamu lakuin dan kasih ke aku berkat kamu untuk pertama kali dalam hidup aku hari lahir akuu menjadi hari yang special, yang bahkan terkadang akupun sendiri melupakan hari lahir aku sendiri.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="itinerary-section" id="itinerary">
+            <div class="section-title">
+                <span>💌 A Special Day Just For Us</span>
+                <h2>Our Birthday Date Itinerary</h2>
+                <p>
+                    Aku sudah menyiapkan hari spesial untuk kita.
+                    Semoga setiap momennya menjadi kenangan yang indah.
+                </p>
+            </div>
+            <div class="itinerary">
+                <div class="timeline-line"></div>
+                <div class="itinerary-card">
+                    <div class="time">05:30</div>
+                    <div class="content">
+                        <h3>Dimulai dengan menjemput pacallkuu yang immupp dan cangtipp</h3>
+                    </div>
+                </div>
+                <div class="itinerary-card">
+                    <div class="time">09:00</div>
+                    <div class="content">
+                        <h3>Arriving at a place, then taking a leisurely walk to enjoy the atmosphere. </h3>
+                    </div>
+                </div>
+                <div class="itinerary-card">
+                    <div class="time">09:30</div>
+                    <div class="content">
+                        <h3>Breakfast at Valley Market – Explore the Museum</h3>
+                    </div>
+                </div>
+                <div class="itinerary-card">
+                    <div class="time">10:30</div>
+                    <div class="content">
+                        <h3>Stroll around the market area, check out the tenants, and take photos at aesthetic spots.</h3>
+                    </div>
+                </div>
+                <div class="itinerary-card">
+                    <div class="time">13:00</div>
+                    <div class="content">
+                        <h3>and next to destination</h3>
+                    </div>
+                </div>
+        </section>
+        <section class="gallery-section" id="gallery">
+            <div class="gallery-title">
+                <span>📸 Our Beautiful Memories</span>
+                <h2>Every Moment We Keep Close</h2>
+                <p>These photos are small pieces of our story—bright, sweet, and unforgettable.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="images/img1.jpeg" alt="Chat moment">
+                    <figcaption>First chat moment</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img2.jpeg" alt="First meet">
+                    <figcaption>Our first meeting</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img3.jpeg" alt="Couple photo">
+                    <figcaption>Together as a couple</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img4.jpeg" alt="Birthday moment">
+                    <figcaption>Birthday surprise</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img5.jpeg" alt="Rose photo">
+                    <figcaption>Flower moments</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img6.jpeg" alt="Rose photo">
+                    <figcaption>Soft rose glow</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img7.jpeg" alt="Rose photo">
+                    <figcaption>Sweet togetherness</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img8.jpeg" alt="Rose photo">
+                    <figcaption>Happy memories</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img9.jpeg" alt="Rose photo">
+                    <figcaption>Gentle moments</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img10.jpeg" alt="Rose photo">
+                    <figcaption>Warm laughter</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/img11.jpeg" alt="Rose photo">
+                    <figcaption>Forever us</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section class="countdown-section" id="countdown">
+            <div class="countdown-overlay"></div>
+            <div class="countdown-content">
+                <span>⏳ The Special Day Is Coming</span>
+                <h2>Countdown To Our Special Moment ❤️</h2>
+                <p>
+                    Aku sudah tidak sabar bertemu dan merayakan hari spesial ini bersamamu.
+                </p>
+
+                <div class="countdown">
+                    <div class="box">
+                        <h1 id="days">00</h1>
+                        <small>Days</small>
+                    </div>
+                    <div class="box">
+                        <h1 id="hours">00</h1>
+                        <small>Hours</small>
+                    </div>
+                    <div class="box">
+                        <h1 id="minutes">00</h1>
+                        <small>Minutes</small>
+                    </div>
+                    <div class="box">
+                        <h1 id="seconds">00</h1>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ending-section" id="ending">
+            <canvas id="confetti"></canvas>
+
+            <div class="ending-content">
+                <img src="images/cake/cake.png" class="cake" alt="Birthday Cake">
+
+                <h1>
+                    Happy Birthday
+                    <br>
+                    My Beautiful Princess ❤️
+                </h1>
+
+                <p class="ending-message">
+                    Thank you for coming into my life.
+                    Every day with you is a blessing.
+                    I hope this birthday brings happiness,
+                    health, endless laughter,
+                    and beautiful memories.
+                    I promise to keep creating
+                    new memories with you.
+                    I Love You Forever ❤️
+                </p>
+
+                <div class="wish-card">
+                    <h3>Special Birthday Wish</h3>
+                    <div class="wish-text">
+                        <p>AAAAA SAYANGGGG AKUUUUU, aku sangat deg-degan sekaligus happyyyyy😭💗✨</p>
+                        <p>HAPPYYYYY 21TH BIRTHDAY SAYANGGKKUUUUU CINTAKUUUUU!!! YEAYYYYYY!!!!!!! 🎉🎂🤍💐</p>
+                        <p>Selamat hari lahir dan selamat bertumbuh menjadi pribadi yang jauh lebih baik lagi yaa sayanggkuuuu, kecintaanku. Di hari spesial ini aku bener-bener berharap dan berdoa yang terbaik buat kamu.</p>
+                        <p>Semoga Allah SWT selalu kasih kamu kesehatan, umur yang penuh keberkahan, rezeki yang melimpah, dan semoga kamu selalu dikelilingi orang-orang yang baik dan bermanfaat. Semoga Allah mudahkan semua hal yang ingin kamu lakuin, dipermudah dalam setiap langkah, setiap usaha, dan setiap proses yang sedang maupun akan kamu jalanin.</p>
+                        <p>Aku juga selalu berdoa semoga hati kamu selalu diberi kelapangan, ketenangan, dan kesabaran atas apa pun yang sedang ataupun nanti memberatkan kamu. Semoga semua doa, semua harapan, dan semua impian kamu bisa terwujud di tahun ini. Aaamiiinnnn. 🤲🏻🤍</p>
+                        <p>May God always bless you and may good things always be around you. May Allah grant you what your heart truly desires. May Allah make everything you want become something that is truly good for you, and may He accept all your prayers and wishes, sayanggggg. 🤍</p>
+                        <p>Aku berharap di umur kamu yang sekarang, kamu menjadi pribadi yang jauh lebih baik dari sebelumnya. Semoga semua hal di hidup kamu dipermudah sama Allah, selalu diberi kebahagiaan, ketenangan, dan keberkahan dalam setiap langkah yang kamu ambil.</p>
+                        <p>Maaciiiiii banyaaakkkkk bangetttt yaa sayanggg karena kamu sudah hadir di hidup akuuu. Maaciii banyakkk karena kamu selalu ada buat aku, selalu jadi tempat ternyaman aku buat pulang, buat cerita, buat ketawa, bahkan buat nangis. Aku bener-bener sangat berterima kasih punya kamu di hidup aku.</p>
+                        <p>Maaciii banyaaakkkkk juga karena kamu sudah nerima aku dengan semua kekurangan aku. Maaciii karena kamu bikin aku ngerasa layak dicintai, bikin aku ngerasa dihargai, dan bikin hidup aku jauh lebih happyyyy. Aku bener-bener beruntung banget bisa ketemu kamu, bisa kenal kamu, dan sekarang bisa nemenin kamu sampai hari ini.</p>
+                        <p>I am also very lucky to have you. I love you infinitely. 🤍</p>
+                        <p>Jadiiiiii... jangan pernah ngerasa kamu sendirian yaa sayanggkuuuu. Apa pun yang terjadi, aku akan selalu ada buat kamu. Aku akan selalu sayang sama kamu, selalu dukung kamu, selalu doain yang terbaik buat kamu.</p>
+                        <p>I alwayssss loveeee youuuuu, sooooo sooooo muchhhhh!!!!! 🤍🥹💗</p>
+                        <p>Once again... HAPPYYYYYY LEVEL UP DAYYYYY SAYANGGGKKUUUU CINTAKUUUUU!!! 🎂🎉💗✨💐🤍🥰</p>
+                    </div>
+                </div>
+
+                <button id="replay" type="button">Replay Our Story 🌹</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/itinerary.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/proposal.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/ending.js"></script>
+    <script src="js/petals.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+</body>
+</html>
