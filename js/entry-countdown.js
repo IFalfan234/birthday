@@ -1,4 +1,4 @@
-const entryTargetDate = new Date("2026-07-19T05:30:00").getTime();
+const entryTargetDate = new Date("2026-07-16T00:00:00").getTime();
 const redirectUrl = "home.html";
 
 const entryTimer = {
