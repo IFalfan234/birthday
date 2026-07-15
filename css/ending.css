@@ -93,6 +93,160 @@ transform:translateY(-20px);
 
 }
 
+.wish-card{
+
+    margin: 40px auto 0;
+
+    padding: 30px 28px;
+
+    max-width: 900px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-radius: 32px;
+
+    box-shadow: 0 32px 75px rgba(214, 51, 132, 0.14);
+
+    border: 1px solid rgba(255, 156, 187, 0.32);
+
+    animation: floatCard 1.1s ease both;
+
+}
+
+.wish-card h3{
+
+    margin: 0 0 18px;
+
+    font-size: 2.2rem;
+
+    color: #d63384;
+
+    font-family: 'Dancing Script', cursive;
+
+    letter-spacing: 0.02em;
+
+}
+
+.wish-text{
+
+    max-height: 420px;
+
+    overflow-y: auto;
+
+    padding-right: 8px;
+
+}
+
+.wish-text p{
+
+    margin: 0 0 18px;
+
+    color: #5e4150;
+
+    line-height: 1.9;
+
+    font-size: 1rem;
+
+}
+
+.wish-text p:last-child{
+
+    margin-bottom: 0;
+
+}
+
+.wish-card::-webkit-scrollbar{
+
+    width: 8px;
+
+}
+
+.wish-card::-webkit-scrollbar-thumb{
+
+    background: rgba(214, 51, 132, 0.28);
+
+    border-radius: 999px;
+
+}
+
+@keyframes floatCard{
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(24px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .wish-card {
+
+        padding: 24px 20px;
+
+    }
+
+    .wish-card h3 {
+
+        font-size: 1.9rem;
+
+    }
+
+    .wish-text {
+
+        max-height: 360px;
+
+    }
+
+    .wish-text p {
+
+        font-size: 0.98rem;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .wish-card {
+
+        padding: 20px 18px;
+
+        border-radius: 24px;
+
+    }
+
+    .wish-card h3 {
+
+        font-size: 1.65rem;
+
+    }
+
+    .wish-text {
+
+        max-height: 300px;
+
+    }
+
+    .wish-text p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+
 #replay{
 
     margin-top:50px;
