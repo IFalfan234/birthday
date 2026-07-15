@@ -72,6 +72,26 @@ body {
     margin-top: 34px;
 }
 
+.calendar-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff5c8a, #ff7aa9);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 16px 35px rgba(255, 92, 138, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.calendar-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 46px rgba(255, 92, 138, 0.4);
+}
+
 .entry-box {
     width: 120px;
     padding: 18px 12px;
